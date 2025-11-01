@@ -8,12 +8,24 @@ import StyleSelector from './components/StyleSelector';
 import ResultDisplay from './components/ResultDisplay';
 import { ArrowPathIcon, ArrowDownTrayIcon } from './components/Icons';
 import { translations, Language, TranslationKey } from './translations';
+import Footer from './components/Footer';
 
 
 interface UploadedFile {
   base64: string;
   mimeType: string;
 }
+
+const getInitialLanguage = (): Language => {
+  const browserLang = navigator.language;
+  if (browserLang.toLowerCase().startsWith('ja')) {
+    return 'ja';
+  }
+  if (browserLang.toLowerCase() === 'zh-tw') {
+    return 'zh-TW';
+  }
+  return 'en';
+};
 
 const App: React.FC = () => {
   const [uploadedFile, setUploadedFile] = useState<UploadedFile | null>(null);
@@ -22,7 +34,7 @@ const App: React.FC = () => {
   const [generatedImage, setGeneratedImage] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>(getInitialLanguage());
 
   const t = useCallback((key: TranslationKey) => {
     return translations[language][key] || key;
@@ -147,6 +159,7 @@ const App: React.FC = () => {
           />
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
