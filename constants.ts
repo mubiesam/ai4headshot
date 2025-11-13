@@ -67,4 +67,63 @@ export const HEADSHOT_STYLES: HeadshotStyle[] = [
     The expression should be a genuine, gentle smile. Do not alter their ethnicity or core facial structure.`,
     thumbnailColor: 'bg-amber-600',
   },
+  {
+    id: 'rooftop-cityscape',
+    name: 'Rooftop Cityscape',
+    prompt: `Generate a photorealistic, professional headshot of the person in the image, posed on a rooftop with a blurred cityscape at dusk in the background.
+    They should be in stylish business-casual attire.
+    The lighting should be a mix of ambient twilight and soft artificial light, creating a sophisticated and modern mood.
+    Maintain the person's facial features and identity accurately. The final image should be sharp and compelling. Do not alter their ethnicity or core facial structure.`,
+    thumbnailColor: 'bg-indigo-700',
+  },
+  {
+    id: 'geometric-gradient',
+    name: 'Geometric Gradient',
+    prompt: `Generate a modern and clean professional headshot of the person in the image against an abstract, geometric background.
+    The background should feature a subtle gradient of professional colors (e.g., blues, greys, teals) and soft-edged shapes.
+    The subject should be in simple, contemporary business wear.
+    Lighting should be bright, even, and studio-quality.
+    Maintain the person's facial features and identity accurately. Do not alter their ethnicity or core facial structure.`,
+    thumbnailColor: 'bg-purple-500',
+  },
+  {
+    id: 'autumn-park',
+    name: 'Autumn Park',
+    prompt: `Generate a warm and approachable professional headshot of the person in the image, set in a beautiful park during autumn.
+    The background should be filled with soft-focused fall foliage (oranges, reds, yellows).
+    The subject should be wearing cozy yet professional attire, like a sweater or a stylish coat.
+    The lighting should be soft, golden-hour sunlight.
+    Maintain the person's facial features and identity accurately. The expression should be friendly and relaxed. Do not alter their ethnicity or core facial structure.`,
+    thumbnailColor: 'bg-orange-600',
+  },
+  {
+    id: 'textured-wall',
+    name: 'Textured Wall',
+    prompt: `Generate a sophisticated and professional headshot of the person in the image against a minimalist, textured wall.
+    The background could be polished concrete, brushed metal, or a dark textured plaster.
+    The subject should be dressed in elegant, simple attire.
+    The lighting should be slightly dramatic, creating soft shadows that emphasize their features.
+    Maintain the person's facial features and identity accurately. The final image should feel artistic yet professional. Do not alter their ethnicity or core facial structure.`,
+    thumbnailColor: 'bg-stone-500',
+  },
+  {
+    id: 'street-style-business',
+    name: 'Street Style Business',
+    prompt: `Generate a dynamic, professional headshot of the person in the image on a bustling, stylish city street.
+    The background should be out of focus (bokeh effect) to keep the focus on the subject.
+    They should be dressed in modern, sharp business attire.
+    The lighting should appear natural and candid, as if captured in a moment.
+    Maintain the person's facial features and identity accurately. The expression should be confident and energetic. Do not alter their ethnicity or core facial structure.`,
+    thumbnailColor: 'bg-yellow-500',
+  },
+  {
+    id: 'winter-professional',
+    name: 'Winter Professional',
+    prompt: `Generate a crisp and professional headshot of the person in the image with a subtle winter theme.
+    The background could be a modern office window looking out onto a soft-focused snowy scene, or a clean, bright indoor setting with cool-toned light.
+    The subject should be in sharp, professional winter business attire (e.g., a dark blazer or a fine-knit turtleneck).
+    The lighting should be clean and bright with cool undertones.
+    Maintain the person's facial features and identity accurately. Do not alter their ethnicity or core facial structure.`,
+    thumbnailColor: 'bg-sky-300',
+  },
 ];
